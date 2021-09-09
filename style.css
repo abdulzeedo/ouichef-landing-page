@@ -1,0 +1,125 @@
+@import "https://fonts.googleapis.com/css?family=Bitter:300,400,600,700";
+
+html,
+body {
+  font-family: "Bitter";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main {
+  position: relative;
+  background: #211f15;
+  color: white;
+  padding: 50px;
+  padding-top: 100px;
+}
+main h1 {
+  margin: 0;
+}
+.main--border {
+  display: block;
+  fill: #211f15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.main--title {
+  font-size: 72px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 86px;
+}
+.main--title-highlight {
+  color: #f2bf41;
+}
+.main--tagline {
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.main--download--logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.main--download {
+  background-color: white;
+  color: black;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.main--download p {
+  margin: 0;
+}
+.main--mockup {
+  width: 1000px;
+  position: absolute;
+  top: 50px;
+  right: -300px;
+}
+ul {
+  list-style-type: none;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 50px;
+}
+li {
+  margin: auto;
+}
+.feature--icon {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature--icon-blue {
+  background: #accdf7;
+}
+.feature--icon-yellow {
+  background: #f2bf41;
+}
+.feature--icon-darkblue {
+  background: #4070b7;
+}
+
+.feature--description {
+  font-size: 24px;
+  font-weight: 700;
+  width: 250px;
+}
+.feature--description-italic {
+  font-style: italic;
+}
+@media screen and (max-width: 1000px) {
+  main {
+    height: 600px;
+  }
+  .main--mockup {
+    width: 50rem;
+    position: absolute;
+    top: 500px;
+    left: -30%;
+    right: -30%;
+    margin: auto;
+  }
+  ul {
+    margin: 300px auto 100px;
+  }
+}
